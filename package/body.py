@@ -36,7 +36,7 @@ class Body(pygame.sprite.Sprite):
         proj_acc = self.acc.copy()
         proj_dt = dt * 10
 
-        while (proj_pos - self.pos).length() < 1e-10 and proj_pos != self.pos:
+        for i in range(1000):
             for other_object in planets:
                 if other_object != self:
                     proj_forces += calc_f_gravitation(self, other_object, proj_pos)

@@ -16,7 +16,7 @@ class Game:
 
         self.camera_pos = pygame.math.Vector2(0,0)
         self.magnification = 2
-        self.dt = 150
+        self.dt = 170
 
         self.screen = pygame.display.set_mode((1200, 800))
         self.clock = pygame.time.Clock()
